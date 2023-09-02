@@ -34,10 +34,9 @@ import { PersonReadComponent } from './components/person/person-read/person-read
 import { PersonDeleteComponent } from './components/person/person-delete/person-delete.component';
 import { PersonUpdateComponent } from './components/person/person-update/person-update.component';
 import { PersonCrudComponent } from './views/person-crud/person-crud.component';
-import { PokemonCreateComponent } from './components/pokemon/pokemon-create/pokemon-create.component';
-import { PokemonReadComponent } from './components/pokemon/pokemon-read/pokemon-read.component';
-import { PokemonDeleteComponent } from './components/pokemon/pokemon-delete/pokemon-delete.component';
-import { PokemonUpdateComponent } from './components/pokemon/pokemon-update/pokemon-update.component';
+import { PokemonCrudComponent } from './views/pokemon-crud/pokemon-crud.component';
+import { PokemonListComponent } from './components/pokemon/pokemon-list/pokemon-list.component';
+import { PokemonCardComponent } from './components/pokemon/pokemon-card/pokemon-card.component';
 
 registerLocaleData(localePT);
 
@@ -53,11 +52,9 @@ registerLocaleData(localePT);
     PersonDeleteComponent,
     PersonUpdateComponent,
     PersonCrudComponent,
-    PokemonComponent,
-    PokemonCreateComponent,
-    PokemonReadComponent,
-    PokemonDeleteComponent,
-    PokemonUpdateComponent
+    PokemonCrudComponent,
+    PokemonListComponent,
+    PokemonCardComponent
   ],
   imports: [
     BrowserModule,

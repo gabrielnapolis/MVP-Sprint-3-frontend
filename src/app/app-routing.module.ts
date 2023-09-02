@@ -6,6 +6,7 @@ import { HomeComponent } from "./views/home/home.component";
 import { PersonCrudComponent } from "./views/person-crud/person-crud.component";
 import { PersonCreateComponent } from "./components/person/person-create/person-create.component";
 import { PersonDeleteComponent } from "./components/person/person-delete/person-delete.component";
+import { PokemonCrudComponent } from './views/pokemon-crud/pokemon-crud.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,10 @@ const routes: Routes = [
     path: "person/update/:id",
     component: PersonUpdateComponent,
   },
+  {
+    path: "pokemon",
+    component: PokemonCrudComponent
+  }
 ];
 
 @NgModule({

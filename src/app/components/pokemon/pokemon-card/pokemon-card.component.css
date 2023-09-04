@@ -1,0 +1,31 @@
+.pokemon-card{
+    background: #f2f2f2;
+    border: 1px solid #c5c5c5;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(233, 255, 229, 0);
+    border-top: 3px solid #ff0000;
+    border-bottom: 3px solid #ff0000;
+}
+
+.name::first-letter{
+    text-transform: uppercase;
+}
+
+.name {
+    font-family: "Flexo-Demi",arial,sans-serif;
+    color: #313131;
+    font-size: 145%;
+    font-weight: 550;
+}
+
+.number {
+    font-family: "Flexo-Bold",arial,sans-serif;
+    color: #919191;
+}
+
+button{
+    background-color: #ffde00 !important;
+}

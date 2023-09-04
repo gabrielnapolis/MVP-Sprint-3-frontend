@@ -10,14 +10,28 @@ export class PokemonService {
   pokemons = [];
 
   constructor(private httpCliente: HttpClient) {
-    this.carregarPokemons();
+    this.getPokemons();
   }
 
-  async carregarPokemons() {
+  async getPokemons() {
     const req = await firstValueFrom(this.httpCliente.get<any>(this.baseUrl));
 
     this.pokemons = req.results;
-
     console.log(this.pokemons)
+
+    console.log()
   }
+
+  getTypes(){
+
+  }
+
+  addPokemon(){
+
+  }
+
+  deletePokemon(){
+    
+  }
+
 }

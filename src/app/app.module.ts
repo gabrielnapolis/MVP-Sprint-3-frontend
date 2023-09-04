@@ -37,6 +37,7 @@ import { PersonCrudComponent } from './views/person-crud/person-crud.component';
 import { PokemonCrudComponent } from './views/pokemon-crud/pokemon-crud.component';
 import { PokemonListComponent } from './components/pokemon/pokemon-list/pokemon-list.component';
 import { PokemonCardComponent } from './components/pokemon/pokemon-card/pokemon-card.component';
+import { LoginComponent } from './components/login/login.component';
 
 registerLocaleData(localePT);
 
@@ -54,7 +55,8 @@ registerLocaleData(localePT);
     PersonCrudComponent,
     PokemonCrudComponent,
     PokemonListComponent,
-    PokemonCardComponent
+    PokemonCardComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

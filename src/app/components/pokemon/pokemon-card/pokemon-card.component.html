@@ -1,8 +1,9 @@
 <div class="pokemon-card">
-    <img [src]="catchImage()"><br/>
-    <p class="number"> N° {{numberUrl}}</p>
-    <p class="name">{{pokemon.name}}</p>
-    <button mat-raised-button>
-        Adicionar a sua Pokedex
-      </button>
+  <span class="material-icons info-icon"> 
+    info 
+  </span>
+  <img [src]="catchImage()" /><br />
+  <p class="number">N° {{ numberUrl }}</p>
+  <p class="name">{{ pokemon.name }}</p>
+  <button mat-raised-button>Adicionar a sua Pokedex</button>
 </div>

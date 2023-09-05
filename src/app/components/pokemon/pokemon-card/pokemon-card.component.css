@@ -29,3 +29,9 @@
 button{
     background-color: #ffde00 !important;
 }
+
+.info-icon{
+    display: flex;
+    justify-content: end;
+    color:#30a7d7;
+}

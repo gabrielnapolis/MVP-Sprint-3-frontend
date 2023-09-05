@@ -6,7 +6,8 @@ import { firstValueFrom } from 'rxjs';
   providedIn: 'root',
 })
 export class PokemonService {
-  baseUrl = 'https://pokeapi.co/api/v2/pokemon?limit=1000';
+  limit: number = 30;
+  baseUrl = `https://pokeapi.co/api/v2/pokemon/?limit=${this.limit}`;
   pokemons = [];
 
   constructor(private httpCliente: HttpClient) {
@@ -17,9 +18,14 @@ export class PokemonService {
     const req = await firstValueFrom(this.httpCliente.get<any>(this.baseUrl));
 
     this.pokemons = req.results;
-    console.log(this.pokemons)
+    
+    //console.log(this.pokemons)
+  }
 
-    console.log()
+  getPokemonsPaged(){
+    this.limit += 50;
+    this.baseUrl = `https://pokeapi.co/api/v2/pokemon/?limit=${this.limit}`;
+    this.getPokemons();
   }
 
   getTypes(){

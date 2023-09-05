@@ -7,6 +7,7 @@ import { PersonCrudComponent } from "./views/person-crud/person-crud.component";
 import { PersonCreateComponent } from "./components/person/person-create/person-create.component";
 import { PersonDeleteComponent } from "./components/person/person-delete/person-delete.component";
 import { PokemonCrudComponent } from './views/pokemon-crud/pokemon-crud.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: "pokemon",
     component: PokemonCrudComponent
+  },
+  {
+    path: "login",
+    component: LoginComponent
   }
 ];
 

@@ -7,7 +7,9 @@ import { PokemonService } from '../pokemon.service';
   styleUrls: ['./pokemon-list.component.css']
 })
 export class PokemonListComponent {
-  constructor(public servicePokemon: PokemonService){
+  constructor(public servicePokemon: PokemonService){ }
 
+  getPaged(){
+    this.servicePokemon.getPokemonsPaged();
   }
 }

@@ -4,3 +4,21 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+button{
+  font-family: "Flexo-Demi",arial,sans-serif;
+  background-color: #30a7d7 !important;
+  color: #fff !important;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  width: 214px;
+}
+
+.div-button{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

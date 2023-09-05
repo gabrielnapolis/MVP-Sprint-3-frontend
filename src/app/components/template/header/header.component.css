@@ -21,3 +21,16 @@
 .header .title-group i {
     padding-right: 5px;
 }
+
+.fixed {
+    position: fixed !important;
+    width: 100%;
+    transition: 0.2s linear;
+    z-index: 2;
+}
+
+.nofixed {
+    position: static !important;
+    transition: 0.2s linear;
+    top: -50px;
+}

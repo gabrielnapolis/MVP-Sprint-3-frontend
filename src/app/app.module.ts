@@ -39,6 +39,8 @@ import { PokemonListComponent } from './components/pokemon/pokemon-list/pokemon-
 import { PokemonCardComponent } from './components/pokemon/pokemon-card/pokemon-card.component';
 import { LoginComponent } from './components/login/login.component';
 import { PokemonDetailComponent } from './components/pokemon/pokemon-detail/pokemon-detail.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatIconModule} from '@angular/material/icon';
 
 registerLocaleData(localePT);
 
@@ -76,7 +78,9 @@ registerLocaleData(localePT);
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatDialogModule,
+    MatIconModule
   ],
   providers: [{
     provide: LOCALE_ID,

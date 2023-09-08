@@ -51,6 +51,7 @@ button{
     color: #fff !important;
     font-family: "Flexo-Regular",arial,sans-serif;
     margin-right: 25px;
+    border: 1px solid black;
 }
 
 .pokemon-specifications{
@@ -64,6 +65,7 @@ button{
     height: 219px;
     margin-top: 65px;
     margin-left: 28px;
+    border: 1px solid black;
 }
 
 ul{
@@ -107,4 +109,8 @@ li{
 
 .type-rock{
     background-color: #a38c21 !important;
+}
+
+.mat-mdc-dialog-content {
+    max-height: 79vh !important;
 }

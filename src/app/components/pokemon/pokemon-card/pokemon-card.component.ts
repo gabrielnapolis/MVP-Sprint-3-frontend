@@ -1,4 +1,6 @@
 import { Component, Input } from "@angular/core";
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import { PokemonDetailComponent } from "../pokemon-detail/pokemon-detail.component";
 
 @Component({
   selector: "app-pokemon-card",
@@ -12,6 +14,7 @@ export class PokemonCardComponent {
 
   @Input()
   numberUrl: any;
+  constructor(public dialog: MatDialog) {}
 
   catchImage() {
     const numberFormat = this.leadingZero(this.numberUrl);
@@ -27,5 +30,13 @@ export class PokemonCardComponent {
       s = "0" + s;
     }
     return s;
+  }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(PokemonDetailComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 }

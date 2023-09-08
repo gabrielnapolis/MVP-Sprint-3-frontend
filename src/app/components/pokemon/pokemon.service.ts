@@ -19,7 +19,6 @@ export class PokemonService {
 
     this.pokemons = req.results;
     
-    //console.log(this.pokemons)
   }
 
   getPokemonsPaged(){

@@ -1,0 +1,110 @@
+.pokemon-detail{
+    background: #f2f2f2;
+    border: 1px solid #c5c5c5;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 600px;
+}
+
+
+.tittle{
+    display: flex;
+    align-items: baseline;
+}
+
+.tittle h2{
+    margin-left: 45px;
+}
+
+.pokemon-image{
+    width: 370px;
+}
+
+.name {
+    font-family: "Flexo-Demi",arial,sans-serif;
+    color: #313131;
+    font-size: 31px;
+    font-weight: 550;
+}
+
+.number {
+    font-family: "Flexo-Bold",arial,sans-serif;
+    color: #919191;
+    font-size: 17px;
+    margin-left: 300px !important;
+}
+
+.type {
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #212121;
+    font-size: 20px;
+    margin-top:10px;
+}
+
+.weaknesses-button {
+    margin-left: 5px;
+}
+
+button{
+    min-width: 124px;
+    color: #fff !important;
+    font-family: "Flexo-Regular",arial,sans-serif;
+    margin-right: 25px;
+}
+
+.pokemon-specifications{
+    display: flex;
+}
+
+.pokemon-specifications-list{
+    background-color: #30a7d7;
+    border-radius: 30px;
+    width: 154px;
+    height: 219px;
+    margin-top: 65px;
+    margin-left: 28px;
+}
+
+ul{
+    list-style: none;
+    margin-top: 25px;
+}
+
+li{
+    display: grid;
+    font-family: "Flexo-Medium",arial,sans-serif;
+    margin-bottom: 15px;
+
+}
+
+.span01{
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.span02{
+    font-family: "Flexo-Medium",arial,sans-serif;
+    color: #212121;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+.type-water{
+   background-color: #4592c4 !important;
+}
+
+.type-fire {
+    background-color: #fd7d24 !important;
+}
+
+.type-ground {
+    background-color: #f7de3f !important;
+}
+
+.type-rock{
+    background-color: #a38c21 !important;
+}

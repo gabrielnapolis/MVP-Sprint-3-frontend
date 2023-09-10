@@ -11,6 +11,8 @@
 .tittle{
     display: flex;
     align-items: baseline;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .tittle h2{
@@ -28,11 +30,14 @@
     font-weight: 550;
 }
 
+.name::first-letter{
+    text-transform: uppercase;
+}
+
 .number {
     font-family: "Flexo-Bold",arial,sans-serif;
-    color: #919191;
-    font-size: 17px;
-    margin-left: 300px !important;
+    color: #616161;
+    font-size: 21px;
 }
 
 .type {
@@ -52,6 +57,8 @@ button{
     font-family: "Flexo-Regular",arial,sans-serif;
     margin-right: 25px;
     border: 1px solid black;
+    text-transform: capitalize;
+    margin-bottom:5px;
 }
 
 .pokemon-specifications{
@@ -62,7 +69,7 @@ button{
     background-color: #30a7d7;
     border-radius: 30px;
     width: 154px;
-    height: 219px;
+    height: 240px;
     margin-top: 65px;
     margin-left: 28px;
     border: 1px solid black;
@@ -77,7 +84,6 @@ li{
     display: grid;
     font-family: "Flexo-Medium",arial,sans-serif;
     margin-bottom: 15px;
-
 }
 
 .span01{
@@ -95,22 +101,99 @@ li{
     margin-top: 6px;
 }
 
-.type-water{
-   background-color: #4592c4 !important;
-}
-
-.type-fire {
-    background-color: #fd7d24 !important;
-}
-
-.type-ground {
-    background-color: #f7de3f !important;
-}
-
-.type-rock{
-    background-color: #a38c21 !important;
+.span02::first-letter{
+    text-transform: uppercase;
 }
 
 .mat-mdc-dialog-content {
     max-height: 79vh !important;
+}
+
+.water{
+   background-color: #4592c4 !important;
+}
+
+.fire {
+    background-color: #fd7d24 !important;
+}
+
+.ground {
+    background-color: #f7de3f !important;
+    color: #212121 !important;
+}
+
+.rock{
+    background-color: #a38c21 !important;
+}
+
+.grass{
+    background-color: #9bcc50 !important;
+}
+
+.poison{
+    background-color: #f366b9 !important;
+}
+
+.normal{
+    background-color: #a4acaf !important;
+}
+
+.fighting{
+    background-color: #d56723 !important;
+}
+
+.flying{
+    background-color:  #51c4e7 !important;
+}
+
+.bug{
+    background-color: #729f3f !important;
+}
+
+.ghost{
+    background-color: #7b62a3 !important;
+}
+
+.steel{
+    background-color: #9eb7b8 !important;
+}
+
+.electric{
+    background-color: #eed535 !important;
+    color: #212121 !important;
+}
+
+.psychic{
+    background-color: #f366b9 !important;
+}
+
+.ice{
+    background-color: #51c4e7 !important;
+}
+
+.dragon{
+    background-color: #f16e57  !important;
+}
+
+.dark{
+    background-color: #707070 !important;
+}
+
+.fairy{
+    background-color: #fdb9e9 !important;
+}
+
+.unknown{
+    background-color: #a4acaf !important;
+}
+
+.shadow{
+    background-color: #a4acaf !important;
+}
+
+.divButtons{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }

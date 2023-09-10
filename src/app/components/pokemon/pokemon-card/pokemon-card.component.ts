@@ -8,16 +8,20 @@ import { PokemonDetailComponent } from "../pokemon-detail/pokemon-detail.compone
   styleUrls: ["./pokemon-card.component.css"],
 })
 export class PokemonCardComponent {
+  pokemonId: any;
   @Input()
   pokemon: any;
   types: any;
 
   @Input()
   numberUrl: any;
+  
   constructor(public dialog: MatDialog) {}
 
   catchImage() {
     const numberFormat = this.leadingZero(this.numberUrl);
+
+    this.pokemonId = this.leadingZero(this.numberUrl);
 
     return `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${numberFormat}.png`;
   }
@@ -32,11 +36,7 @@ export class PokemonCardComponent {
     return s;
   }
 
-  openDialog() {
-    const dialogRef = this.dialog.open(PokemonDetailComponent);
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
+  openDialog(pokemonNumber: any) {
+    const dialogRef = this.dialog.open(PokemonDetailComponent, {data:pokemonNumber});
   }
 }

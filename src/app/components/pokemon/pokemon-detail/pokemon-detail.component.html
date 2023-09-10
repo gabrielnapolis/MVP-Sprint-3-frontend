@@ -1,34 +1,47 @@
 <mat-dialog-content>
-<div class="pokemon-detail">
-  <div class="tittle">
-    <h1 class="name">Charmander</h1>
-    <h2 class="number">Nº 0004</h2>
-  </div>
-  <div class="pokemon-specifications">
-    <img class="pokemon-image" src="assets/img/charmander.png" />
-    <div class="pokemon-specifications-list">
+  <div class="pokemon-detail" *ngIf="pokemon">
+    <div class="tittle">
+      <h1 class="name">{{ pokemon.name }}</h1>
+      <h2 class="number">Nº {{ pokemonId }}</h2>
+    </div>
+    <div class="pokemon-specifications">
+      <img class="pokemon-image" [src]="pokemonImageUrl" />
+      <div class="pokemon-specifications-list">
         <ul>
           <li>
-           <span class="span01">Height</span>
-           <span class="span02">0.6 m</span>
+            <span class="span01">Height</span>
+            <span class="span02">{{ pokemon.height }}</span>
           </li>
           <li>
             <span class="span01">Weight</span>
-           <span class="span02">8.5 kg</span>
+            <span class="span02">{{ pokemon.weight }}</span>
           </li>
           <li>
-            <span class="span01">Category</span>
-            <span class="span02">Lizard</span>
+            <span class="span01">Abilities</span>
+            <span class="span02">{{ pokemon.abilities[0].ability.name }}</span>
           </li>
-        </ul>  
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="type">Type</h3>
+
+    <div class="divButtons">
+      <div *ngFor="let name of pokemonType; let i = index">
+        <button class="{{ pokemonType[i].type.name }}" mat-raised-button>
+          {{ pokemonType[i].type.name }}
+        </button>
+      </div>
+    </div>
+
+    <h3 class="type">Weaknesses</h3>
+
+    <div class="divButtons">
+    <div *ngFor="let name of pokemonWeak; let i = index">
+      <button class="{{ pokemonWeak[i].name }}" mat-raised-button>
+        {{ pokemonWeak[i].name }}
+      </button>
+    </div>
     </div>
   </div>
-  <h3 class="type">Type</h3>
-  <button class="type-fire" mat-raised-button>Fire</button>
-  
-  <h3 class="type">Weaknesses</h3>
-  <button class="type-water" mat-raised-button>Water</button>
-  <button class="type-ground" mat-raised-button>Ground</button>
-  <button class="type-rock" mat-raised-button>Rock</button>
-</div>
 </mat-dialog-content>

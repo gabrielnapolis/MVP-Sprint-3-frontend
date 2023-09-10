@@ -1,9 +1,9 @@
 <div class="pokemon-card">
-  <span (click)="openDialog()" class="material-icons info-icon"> 
+  <span (click)="openDialog(numberUrl)" class="material-icons info-icon"> 
     info 
   </span>
   <img [src]="catchImage()" /><br />
-  <p class="number">N° {{ numberUrl }}</p>
+  <p class="number">N° {{ pokemonId }}</p>
   <p class="name">{{ pokemon.name }}</p>
-  <button mat-raised-button>Adicionar a sua Pokedex</button>
+  <button mat-raised-button>Adicionar a sua Pokédex</button>
 </div>

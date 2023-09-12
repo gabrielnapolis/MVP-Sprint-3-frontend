@@ -17,6 +17,8 @@ export class PokemonDetailComponent {
   reqWeak: any;
   pokemonWeakUrl:any;
   pokemonWeak: any;
+  pokemonHeight: any;
+  pokemonWeight: any;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -38,14 +40,20 @@ export class PokemonDetailComponent {
       this.pokemonImageUrl =
         this.pokemon?.sprites.other["official-artwork"].front_default;
 
-      //Armazenar tipo a partir da requisição
+      //Armazenar tipos a partir da requisição
       this.pokemonType = this.pokemon?.types;
+
+      //Converter altura
+      this.pokemonHeight = this.formater(this.pokemon?.height)
+
+      //Converter peso
+      this.pokemonWeight = this.formater(this.pokemon?.weight)
 
       //Armazenar URL de tipos para verificar as fraquezas dos pokemons
       this.pokemonWeakUrl = this.pokemon?.types[0].type.url;
 
       //Método que verifica fraquezas a partir dos tipos
-      this.getWeakness(this.pokemonWeakUrl);
+      this.getWeakness(this.pokemonWeakUrl);   
     });
   }
 
@@ -53,9 +61,14 @@ export class PokemonDetailComponent {
     this.httpCliente.get<any>(url).subscribe((data)=>{
       this.reqWeak = data;
       this.pokemonWeak = this.reqWeak.damage_relations.double_damage_from;
-      console.log(this.pokemonWeak)
     })
   }
+
+  formater(n: number){
+    n = n/10;
+    return n;
+  }
+
 
   leadingZero(str: string | number, size = 3): string {
     let s = String(str);

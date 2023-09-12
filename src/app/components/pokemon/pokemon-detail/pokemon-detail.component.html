@@ -10,11 +10,11 @@
         <ul>
           <li>
             <span class="span01">Height</span>
-            <span class="span02">{{ pokemon.height }}</span>
+            <span class="span02">{{ pokemonHeight }} m</span>
           </li>
           <li>
             <span class="span01">Weight</span>
-            <span class="span02">{{ pokemon.weight }}</span>
+            <span class="span02">{{ pokemonWeight }} Kg </span>
           </li>
           <li>
             <span class="span01">Abilities</span>
@@ -37,11 +37,11 @@
     <h3 class="type">Weaknesses</h3>
 
     <div class="divButtons">
-    <div *ngFor="let name of pokemonWeak; let i = index">
-      <button class="{{ pokemonWeak[i].name }}" mat-raised-button>
-        {{ pokemonWeak[i].name }}
-      </button>
-    </div>
+      <div *ngFor="let name of pokemonWeak; let i = index">
+        <button class="{{ pokemonWeak[i].name }}" mat-raised-button>
+          {{ pokemonWeak[i].name }}
+        </button>
+      </div>
     </div>
   </div>
 </mat-dialog-content>

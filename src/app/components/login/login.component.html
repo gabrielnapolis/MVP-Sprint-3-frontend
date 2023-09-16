@@ -1,7 +1,8 @@
 <div class="login-container">
-  <h2>Login</h2>
-  <form>
-    <mat-form-field class="form-group">
+  <form class="form-group">
+    <img class="logo" src="assets/img/logo-pokemon2.png" alt="logo">
+    <h2>Login/Cadastro</h2>
+    <mat-form-field>
       <mat-label for="email">Email</mat-label>
       <input
         matInput
@@ -12,7 +13,7 @@
         required
       />
     </mat-form-field>
-    <mat-form-field class="form-group">
+    <mat-form-field>
       <mat-label for="password">Senha</mat-label>
       <input
         matInput
@@ -23,10 +24,11 @@
         required
       />
     </mat-form-field>
+    <a class="forget-password">Esqueci a senha</a>
+
+    <div class="div-buttons">
+      <button mat-raised-button type="submit">Cadastrar</button>
+      <button mat-raised-button type="submit" class="button-in" (click)="login()">Entrar</button>
+    </div>
   </form>
-  
-  <div> 
-    <button mat-raised-button type="submit">Cadastrar</button>
-    <button mat-raised-button type="submit" class="button-in">Entrar</button>
-  </div>
 </div>

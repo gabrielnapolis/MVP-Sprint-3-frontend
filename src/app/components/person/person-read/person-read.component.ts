@@ -17,7 +17,6 @@ export class PersonReadComponent implements OnInit {
 
   ngOnInit(): void {
     this.personService.read().subscribe((resp) => {
-      console.log(resp);
       this.persons = resp.pessoas;
     });
   }

@@ -5,5 +5,5 @@
   <img [src]="catchImage()" /><br />
   <p class="number">N° {{ pokemonId }}</p>
   <p class="name">{{ pokemon.name }}</p>
-  <button mat-raised-button>Adicionar a sua Pokédex</button>
+  <button mat-raised-button (click)="addPokemon()">Adicionar a sua Pokédex</button>
 </div>

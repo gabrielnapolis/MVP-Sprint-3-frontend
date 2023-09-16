@@ -32,7 +32,7 @@ const routes: Routes = [
     component: PersonUpdateComponent,
   },
   {
-    path: "pokemon",
+    path: "pokemons",
     component: PokemonCrudComponent
   },
   {

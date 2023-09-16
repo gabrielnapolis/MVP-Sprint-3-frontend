@@ -1,6 +1,8 @@
 import { Component, Input } from "@angular/core";
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 import { PokemonDetailComponent } from "../pokemon-detail/pokemon-detail.component";
+import { PokemonDTO } from "../pokemonDTO.model";
+import { PokemonDTOService } from "../pokemon-dto.service";
 
 @Component({
   selector: "app-pokemon-card",
@@ -15,8 +17,13 @@ export class PokemonCardComponent {
 
   @Input()
   numberUrl: any;
+
+  pokemonDTO: PokemonDTO = {
+    code: null,
+    fk_pessoa: null
+  }
   
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, private pokemonService: PokemonDTOService) {}
 
   catchImage() {
     const numberFormat = this.leadingZero(this.numberUrl);
@@ -38,5 +45,15 @@ export class PokemonCardComponent {
 
   openDialog(pokemonNumber: any) {
     const dialogRef = this.dialog.open(PokemonDetailComponent, {data:pokemonNumber});
+  }
+
+  addPokemon(): void{
+    this.pokemonDTO.code = this.numberUrl
+    this.pokemonDTO.fk_pessoa = 1
+    console.log(this.pokemonDTO)
+
+    this.pokemonService.create(this.pokemonDTO).subscribe(() => {
+      this.pokemonService.showMessage("Pokemon Adicionado")
+    });
   }
 }

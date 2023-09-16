@@ -19,6 +19,7 @@ export class PokemonDetailComponent {
   pokemonWeak: any;
   pokemonHeight: any;
   pokemonWeight: any;
+  pokemonAbilite: any;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -39,6 +40,10 @@ export class PokemonDetailComponent {
       //Armazenar URL de imagem a partir da requisição
       this.pokemonImageUrl =
         this.pokemon?.sprites.other["official-artwork"].front_default;
+
+      //Armazenar habilidade do pokemon a partir da requisição
+      this.pokemonAbilite = this.pokemon?.abilities[0].ability.name;
+      console.log(this.pokemon?.abilities)
 
       //Armazenar tipos a partir da requisição
       this.pokemonType = this.pokemon?.types;

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,4 +9,10 @@ import { Component } from '@angular/core';
 export class LoginComponent {
   email: any;
   password: any;
+
+  constructor(private router: Router){}
+  login(){
+    localStorage.setItem('token', 'abshj32')
+    this.router.navigateByUrl("/pokemons")
+  }
 }

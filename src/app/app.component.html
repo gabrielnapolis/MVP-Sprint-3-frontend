@@ -1,3 +1,6 @@
-<app-header></app-header>
-<app-nav></app-nav>
-<app-footer></app-footer>
+
+<app-header *ngIf="!login"></app-header>
+<app-nav *ngIf="!login"></app-nav>
+<app-footer *ngIf="!login"></app-footer>
+
+<router-outlet *ngIf="login"></router-outlet>

@@ -1,5 +1,3 @@
-# Frontend Angular
-
 # Apresentação 
 
 Esse é o MVP, projeto final do 3° módulo da Pós-Graduação em Engenharia de Software da PUC-RIO.

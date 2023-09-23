@@ -9,6 +9,7 @@ import { PersonDeleteComponent } from "./components/person/person-delete/person-
 import { PokemonCrudComponent } from './views/pokemon-crud/pokemon-crud.component';
 import { LoginComponent } from './components/login/login.component';
 import { PokemonDetailComponent } from './components/pokemon/pokemon-detail/pokemon-detail.component';
+import { PokemonUserComponent } from './components/pokemon/pokemon-user/pokemon-user.component';
 
 const routes: Routes = [
   {
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: "pokemon-detail",
     component: PokemonDetailComponent
+  },
+  {
+    path: "pokemon-user",
+    component: PokemonUserComponent
   },
   {
     path: "login",

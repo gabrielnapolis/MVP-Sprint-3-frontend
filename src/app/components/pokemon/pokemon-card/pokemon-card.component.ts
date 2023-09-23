@@ -50,10 +50,16 @@ export class PokemonCardComponent {
   addPokemon(): void{
     this.pokemonDTO.code = this.numberUrl
     this.pokemonDTO.fk_pessoa = 1
+
     console.log(this.pokemonDTO)
 
     this.pokemonService.create(this.pokemonDTO).subscribe(() => {
       this.pokemonService.showMessage("Pokemon Adicionado")
-    });
+    },
+    error => {
+        console.log(error)
+        this.pokemonService.showMessage(`${error.error.mesage}`)
+    }
+    );
   }
 }

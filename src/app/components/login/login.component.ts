@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { PersonService } from '../person/person.service';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,16 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   email: any;
-  password: any;
+  senha: any;
 
-  constructor(private router: Router){}
-  
-  login(){
-    localStorage.setItem('token', 'abshj32')
-    this.router.navigateByUrl("/pokemons")
+  constructor(private router: Router, private personService: PersonService){}
+
+
+  login(): void{ 
+    this.personService.login(this.email, this.senha).subscribe((token)=>{
+      localStorage.setItem('token', token)
+    })
+    //this.router.navigateByUrl("/pokemons")
   }
 
   goToRegister(){

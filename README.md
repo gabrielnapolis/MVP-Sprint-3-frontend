@@ -30,7 +30,7 @@ Esse repositório é referente ao Componente A, o frontend da aplicação, desen
 
 O intuito desse sistema foi realizar um cadastro de treinadores pokemon, onde é possível realizar seu cadastro e adicionar pokemons a sua pokédex.
 
-Após isso, o treinado pode adicionar um pokemon a sua pokédex
+Após isso, o treinado pode adicionar um pokemon a sua pokédex.
 
 
 

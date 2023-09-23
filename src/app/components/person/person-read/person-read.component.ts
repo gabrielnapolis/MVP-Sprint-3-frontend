@@ -18,6 +18,10 @@ export class PersonReadComponent implements OnInit {
   ngOnInit(): void {
     this.personService.read().subscribe((resp) => {
       this.persons = resp.pessoas;
-    });
+    },
+    error => {
+      console.log("Criar alert")
+    }
+    );
   }
 }

@@ -1,7 +1,7 @@
 <div class="pokemon-card">
-  <span (click)="openDialog(numberUrl)" class="material-icons info-icon"> 
+  <a (click)="openDialog(numberUrl)" class="material-icons info-icon"> 
     info 
-  </span>
+  </a>
   <img [src]="catchImage()" /><br />
   <p class="number">N° {{ pokemonId }}</p>
   <p class="name">{{ pokemon.name }}</p>

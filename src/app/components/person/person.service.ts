@@ -27,7 +27,14 @@ export class PersonService {
   }
 
   read(): Observable<PersonsDto>{
-    return this.http.get<PersonsDto>(this.baseUrl2)
+    const token = localStorage.getItem('token')
+    if(!token){
+      const error: any = new Error('')
+      error.timestamp = Date.now();
+      return error; 
+    }
+    const headers = { 'Authorization': `Bearer ${token}` }
+    return this.http.get<PersonsDto>(this.baseUrl2, { headers })
   }
 
   readById(id: string): Observable<Person>{
@@ -43,5 +50,9 @@ export class PersonService {
   delete(person: Person): Observable<Person> {
     const url = `${this.baseUrl}/${person.id}`
     return this.http.delete<Person>(url)
+  }
+
+  login(email: string, senha: string): Observable<string> {
+    return this.http.post<string>(this.baseUrl, {email, senha})
   }
 }

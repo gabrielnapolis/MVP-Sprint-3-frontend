@@ -41,6 +41,7 @@ import { LoginComponent } from './components/login/login.component';
 import { PokemonDetailComponent } from './components/pokemon/pokemon-detail/pokemon-detail.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatIconModule} from '@angular/material/icon';
+import { PokemonUserComponent } from './components/pokemon/pokemon-user/pokemon-user.component';
 
 registerLocaleData(localePT);
 
@@ -60,7 +61,8 @@ registerLocaleData(localePT);
     PokemonListComponent,
     PokemonCardComponent,
     LoginComponent,
-    PokemonDetailComponent
+    PokemonDetailComponent,
+    PokemonUserComponent
   ],
   imports: [
     BrowserModule,

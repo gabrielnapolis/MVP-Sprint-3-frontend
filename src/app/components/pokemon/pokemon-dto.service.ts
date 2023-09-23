@@ -9,6 +9,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class PokemonDTOService {
   baseUrl = "http://127.0.0.1:5000/pokemon";
+  baseUrlPokemonApi = 'https://pokeapi.co/api/v2/pokemon/';
+  pokemons = [];
 
   constructor(private http: HttpClient, private snackBar: MatSnackBar) { }
 
@@ -37,5 +39,9 @@ export class PokemonDTOService {
   delete(id: string): Observable<PokemonDTO> {
     const url = `${this.baseUrl}/${id}`
     return this.http.delete<PokemonDTO>(url)
+  }
+
+  getPokemonUser(n: number){
+      this.baseUrlPokemonApi += `${n}`
   }
 }

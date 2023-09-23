@@ -16,13 +16,13 @@ Nesse contexto foi utilizado todo o conteúdo apresentado ao longo das matérias
 
 <img src="src\assets\img\requisitos.png">
 
-Para esse projeto, foi utilizada a seguinte arquitetura:
+## Para esse projeto, foi utilizada a seguinte arquitetura:
 
-**Componente A:** Frontend em Angular
+**Componente A:** Frontend em Angular.
 
-**Componente B:** PokeApi, API pública onde é possível consultar todos os pokemons, juntamente com seus atributos como: imagens, habilitades, tipos, altura, peso, fraquezas.
+**Componente B:** PokeApi, API pública onde é possível consultar todos os pokemons, juntamente com seus atributos como: imagens, habilitades, tipos, altura, peso, fraquezas. Documentação: https://pokeapi.co/
 
-**Componente C:** API REST desenvolvida com Python e Flask
+**Componente C:** API REST desenvolvida com Python e Flask.
 
 ## Execução via Docker
 

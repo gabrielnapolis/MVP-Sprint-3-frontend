@@ -12,10 +12,9 @@ Como mostrado na imagem a seguir, era necessário o desenvolvimento de 03 compon
 
 **Componente C:** API REST ou GraphQL. 
 
-<img src="src\assets\img\requisitos.png">
-
 Nesse contexto foi utilizado todo o conteúdo apresentado ao longo das aulas das matérias de Arquitetura e Projeto de Software, Arquitetura de Microsserviços e Arquitetura de Nuvem e DevOps.
 
+<img src="src\assets\img\requisitos.png">
 
 
 ## Execução via Docker

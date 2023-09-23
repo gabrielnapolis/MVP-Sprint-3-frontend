@@ -1,5 +1,13 @@
 # Frontend Angular
 
+# Apresentação 
+
+Esse é o MVP, projeto final do 3° módulo da pós-graduação em Engenharia de Software da PUC-RIO.
+
+Os requisitos desse projeto eram que fosse desenvolvida uma aplicação, utilizando componentização.
+
+<img src="/assets/img/requisitos.png">
+
 ## Execução via Docker
 
 1° - Criar imagem Docker:

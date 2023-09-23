@@ -25,4 +25,13 @@ Para executar esse projeto é necessário:
         - ng serve
 
 
+## Execução via Docker
+
+# Criar imagem Docker
+1 docker build -t frontend .
+
+# Executar container
+2. docker run -p 8080:80 frontend
+
+
 

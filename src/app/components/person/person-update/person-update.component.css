@@ -3,7 +3,20 @@ form {
     flex-direction: column;
     margin-top: 25px;
 }
+mat-card {
+    width: 400px;
+}
+
+mat-card-title{
+    display: flex;
+    justify-content: center;
+}
 
 button {
     margin: 20px 15px 10px 10px;
+}
+
+.div-buttons{
+    display: flex;
+    justify-content: center;
 }

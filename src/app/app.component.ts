@@ -1,4 +1,4 @@
-import { Component, NgZone } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 
 
@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'frontend'; 
   login: any;
 
-  constructor (private zone: NgZone, private router: Router) {
+  constructor ( private router: Router) {
     this.router.events.subscribe((event: any) => {
       if (event instanceof NavigationEnd) {
         if (event.url === '/login') {

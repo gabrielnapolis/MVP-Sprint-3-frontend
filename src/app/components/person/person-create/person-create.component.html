@@ -1,26 +1,30 @@
 <mat-card>
-    <mat-card-title>Novo Usuário</mat-card-title>
+    <mat-card-title>Cadastro Inicial</mat-card-title>
     <form>
       <mat-form-field>
-        <input matInput placeholder="Nome" 
+        <input matInput placeholder="Nome" type="text"
           [(ngModel)]="person.nome" name="nome"/>
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Idade" 
-          [(ngModel)]="person.idade" name="idade"/>
+        <input matInput placeholder="Idade" type="number" 
+          [(ngModel)]="person.idade" name="idade" max="100"/>
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Email" 
+        <input matInput placeholder="Email" type="email"
           [(ngModel)]="person.email" name="email"/>
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Senha" 
-          [(ngModel)]="person.senha" name="senha" maxlength="15"/>
+        <input matInput placeholder="Senha" type="password"
+          [(ngModel)]="person.senha" name="senha" maxlength="8"/>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Confirmar Senha" type="password"
+           name="senha" maxlength="8"/>
       </mat-form-field>
     </form>
   
   
-  <div>
+  <div class="div-buttons">
     <button mat-raised-button (click)="createPerson()" color="primary">
       Salvar
     </button>

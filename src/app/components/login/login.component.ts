@@ -11,8 +11,13 @@ export class LoginComponent {
   password: any;
 
   constructor(private router: Router){}
+  
   login(){
     localStorage.setItem('token', 'abshj32')
     this.router.navigateByUrl("/pokemons")
+  }
+
+  goToRegister(){
+    this.router.navigate(["/person/create"]);
   }
 }

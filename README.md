@@ -6,9 +6,19 @@ Esse é o MVP, projeto final do 3° módulo da Pós-Graduação em Engenharia de
 
 Os requisitos desse projeto eram que fosse desenvolvida uma aplicação, utilizando componentização.
 
-Nesse contexto foi utilizado todo o conteúdo apresentado ao longo das aulas das matérias de Arquitetura e Projeto de Software, Arquitetura de Microsserviços e Arquitetura de Nuvem e DevOps
+Como mostrado na imagem a seguir, era necessário o desenvolvimento de 03 componentes, sendo eles:
+
+Componente A: Desenvolvimento de uma interface do usuário, utilizando HTML, CSS e JavaScript com alguma biblioteca ou framework de sua preferência.
+
+Componente B: Uso de uma API externa pública e que ofereça um serviço não pago.
+
+Componente C: API REST ou GraphQL. 
 
 <img src="src\assets\img\requisitos.png">
+
+Nesse contexto foi utilizado todo o conteúdo apresentado ao longo das aulas das matérias de Arquitetura e Projeto de Software, Arquitetura de Microsserviços e Arquitetura de Nuvem e DevOps.
+
+
 
 
 

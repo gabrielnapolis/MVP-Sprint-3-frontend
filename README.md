@@ -6,7 +6,7 @@ Esse é o MVP, projeto final do 3° módulo da pós-graduação em Engenharia de
 
 Os requisitos desse projeto eram que fosse desenvolvida uma aplicação, utilizando componentização.
 
-<img src="\assets\img\requisitos.png">
+<img src="assets/img/requisitos.png">
 
 
 

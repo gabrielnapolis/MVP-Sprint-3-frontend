@@ -1,6 +1,6 @@
 # Frontend Angular
 
-Para executar esse projeto é necessário:
+Para executar esse projeto local é necessário:
 
 1° - Instalação do NodeJS:
     
@@ -27,11 +27,15 @@ Para executar esse projeto é necessário:
 
 ## Execução via Docker
 
-# Criar imagem Docker
-1 docker build -t frontend .
+1° - Criar imagem Docker:
 
-# Executar container
-2. docker run -p 8080:80 frontend
+    No diretório raiz do projeto, execute o seguinte comando:
+    
+        docker build -t frontend .
+
+2° - Executar container
+
+    docker run -p 8080:80 frontend
 
 
 

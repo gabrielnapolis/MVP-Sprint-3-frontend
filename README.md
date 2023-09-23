@@ -12,10 +12,17 @@ Como mostrado na imagem a seguir, era necessário o desenvolvimento de 03 compon
 
 **Componente C:** API REST ou GraphQL. 
 
-Nesse contexto foi utilizado todo o conteúdo apresentado ao longo das aulas das matérias de Arquitetura e Projeto de Software, Arquitetura de Microsserviços e Arquitetura de Nuvem e DevOps.
+Nesse contexto foi utilizado todo o conteúdo apresentado ao longo das matérias de Arquitetura e Projeto de Software, Arquitetura de Microsserviços e Arquitetura de Nuvem e DevOps.
 
 <img src="src\assets\img\requisitos.png">
 
+Para esse projeto, foi utilizada a seguinte arquitetura:
+
+**Componente A:** Frontend em Angular
+
+**Componente B:** PokeApi, API pública onde é possível consultar todos os pokemons, juntamente com seus atributos como: imagens, habilitades, tipos, altura, peso, fraquezas.
+
+**Componente C:** API REST desenvolvida com Python e Flask
 
 ## Execução via Docker
 

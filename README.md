@@ -6,7 +6,7 @@ Os requisitos desse projeto eram que fosse desenvolvida uma aplicação, utiliza
 
 Como mostrado na imagem a seguir, era necessário o desenvolvimento de 03 componentes, sendo eles:
 
-**Componente A:** Desenvolvimento de uma API REST implementada em Python e Flask ou uma interface do usuário, utilizando HTML, CSS e JavaScript com alguma biblioteca ou framework de sua preferência (Angular, React, Vue e etc).
+**Componente A:** Desenvolvimento de uma API REST implementada em Python e Flask ou uma interface do usuário, utilizando HTML, CSS e JavaScript com alguma biblioteca ou framework de sua preferência (Angular, React, Vue, etc).
 
 **Componente B:** Uso de uma API externa pública e que ofereça um serviço não pago.
 

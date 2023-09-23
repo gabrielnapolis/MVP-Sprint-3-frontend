@@ -26,7 +26,16 @@ Nesse contexto foi utilizado todo o conteúdo apresentado ao longo das matérias
 
 ## Sobre este repositório
 
-Esse repositório é referente ao Componente A, o frontend da aplicação, desenvolvido em Angular. Através dele, realizamos chamadas para o Componente C, backend da aplicação, e também para o Componente B, a PokeApi.
+Esse repositório é referente ao Componente A, o frontend da aplicação, desenvolvido em Angular. Através dele, realizamos chamadas para o Componente C, o backend da aplicação, e também para o Componente B, a PokeApi.
+
+O intuito desse sistema foi realizar um cadastro de treinadores pokemon, onde é possível realizar seu cadastro e adicionar pokemons a sua pokédex.
+
+Após isso, o treinado pode adicionar um pokemon a sua pokédex
+
+
+
+
+
 
 
 

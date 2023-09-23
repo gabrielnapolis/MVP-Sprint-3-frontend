@@ -18,8 +18,6 @@ Nesse contexto foi utilizado todo o conteúdo apresentado ao longo das aulas das
 
 
 
-
-
 ## Execução via Docker
 
 1° - Criar imagem Docker:

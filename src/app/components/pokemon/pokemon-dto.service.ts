@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { PokemonDTO } from './pokemonDTO.model';
-import { Observable } from 'rxjs';
+import { Observable, catchError, firstValueFrom } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Injectable({
@@ -9,8 +9,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class PokemonDTOService {
   baseUrl = "http://127.0.0.1:5000/pokemon";
-  baseUrlPokemonApi = 'https://pokeapi.co/api/v2/pokemon/';
   pokemons = [];
+
 
   constructor(private http: HttpClient, private snackBar: MatSnackBar) { }
 
@@ -31,17 +31,13 @@ export class PokemonDTOService {
     return this.http.get<PokemonDTO[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<PokemonDTO>{
-    const url = `${this.baseUrl}/${id}`
-    return this.http.get<PokemonDTO>(url)
-  }
-
   delete(id: string): Observable<PokemonDTO> {
     const url = `${this.baseUrl}/${id}`
     return this.http.delete<PokemonDTO>(url)
   }
-
-  getPokemonUser(n: number){
-      this.baseUrlPokemonApi += `${n}`
+  
+  readById(id: number): Observable<any>{
+    const url = `${this.baseUrl}/${id}`
+    return this.http.get<any>(url)
   }
 }

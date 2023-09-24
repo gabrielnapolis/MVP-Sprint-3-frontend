@@ -43,6 +43,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import {MatIconModule} from '@angular/material/icon';
 import { PokemonUserComponent } from './components/pokemon/pokemon-user/pokemon-user.component';
 
+
 registerLocaleData(localePT);
 
 @NgModule({
@@ -62,7 +63,7 @@ registerLocaleData(localePT);
     PokemonCardComponent,
     LoginComponent,
     PokemonDetailComponent,
-    PokemonUserComponent
+    PokemonUserComponent,
   ],
   imports: [
     BrowserModule,

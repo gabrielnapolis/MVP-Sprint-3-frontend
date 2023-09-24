@@ -18,7 +18,6 @@ export class LoginComponent {
     this.personService.login(this.email, this.senha).subscribe((token)=>{
       localStorage.setItem('token', token)
     })
-    //this.router.navigateByUrl("/pokemons")
   }
 
   goToRegister(){

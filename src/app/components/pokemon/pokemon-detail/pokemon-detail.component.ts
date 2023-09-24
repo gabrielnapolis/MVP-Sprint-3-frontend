@@ -43,7 +43,6 @@ export class PokemonDetailComponent {
 
       //Armazenar habilidade do pokemon a partir da requisição
       this.pokemonAbilite = this.pokemon?.abilities[0].ability.name;
-      console.log(this.pokemon?.abilities)
 
       //Armazenar tipos a partir da requisição
       this.pokemonType = this.pokemon?.types;

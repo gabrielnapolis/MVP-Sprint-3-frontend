@@ -2,7 +2,7 @@
 
 Esse é o MVP, projeto final do 3° módulo da Pós-Graduação em Engenharia de Software da PUC-RIO.
 
-Os requisitos desse projeto eram que fosse desenvolvida uma aplicação, utilizando componentização.
+Os requisitos deste projeto eram que fosse desenvolvida uma aplicação, utilizando componentização.
 
 Como mostrado na imagem a seguir, era necessário o desenvolvimento de 03 componentes, sendo eles:
 
@@ -30,7 +30,7 @@ Esse repositório é referente ao Componente A, o frontend da aplicação, desen
 
 O intuito desse sistema foi realizar um cadastro de treinadores pokemon, onde é possível realizar seu cadastro e adicionar pokemons a sua pokédex.
 
-Após isso, o treinado pode adicionar um pokemon a sua pokédex.
+Após isso, o treinador pode adicionar um pokemon a sua pokédex.
 
 
 

@@ -1,6 +1,12 @@
-<div class="pokemon-card">
-  <span></span>
-  <app-pokemon-card
-
-  ></app-pokemon-card>
+<div class="pokemon-list">
+  <div *ngFor="let pokemon of pokemonsData; index as i">
+    <div class="pokemon-card">
+      <a (click)="openDialog(pokemon.id)" class="material-icons info-icon">
+        info
+      </a>
+      <img [src]="catchImage(pokemon.id)" /><br />
+      <p class="number">N° {{ leadingZero(pokemon.id)}}</p>
+      <p class="name">{{ pokemon.name }}</p>
+    </div>
+  </div>
 </div>

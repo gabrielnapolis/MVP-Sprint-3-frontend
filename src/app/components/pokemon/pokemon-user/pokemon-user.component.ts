@@ -40,6 +40,7 @@ export class PokemonUserComponent implements OnInit {
     this.servicePokemon.readById(user.id).subscribe((data)=>{
       this.pokemons = data.pokemons
       console.log(this.pokemons)
+      
       this.pokemons.forEach((pokemon: PokemonDTO) => {
         this.pokemonCode = pokemon.code;
         this.id = pokemon.id
@@ -87,17 +88,12 @@ export class PokemonUserComponent implements OnInit {
 
   deletePokemon(n: string){
       this.servicePokemon.delete(n).subscribe(()=>{
+        console.log(n)
         this.reloadPage();
         this.servicePokemon.showMessage("Pokemon deletado!")
       },
       error =>{
         this.servicePokemon.showMessage(error.error.mesage)
       })
-  }
-
-  ConfirmDelete(n: string) {
-    if(confirm("Confirmar")) {
-      this.deletePokemon(n)
-    }
   }
 }

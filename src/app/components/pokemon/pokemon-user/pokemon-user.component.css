@@ -32,22 +32,27 @@
 
 .number {
     font-family: "Flexo-Bold",arial,sans-serif;
+    background-color: #f7de3f;
+    color: #212121 !important;
+    padding-left: 8px;
     color: #919191;
+    width: 51px;
+    border-radius: 9%;
+    border: 1px solid;
 }
 
-button{
-    background-color: #ffde00 !important;
+
+.div-icons{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .info-icon{
-    display: flex;
-    justify-content: end;
     color:#30a7d7;
 }
 
 .delete-icon{
-    display: flex;
-    justify-content: end;
     color:#ff0000;
 }
 

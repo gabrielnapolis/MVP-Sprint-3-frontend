@@ -12,9 +12,12 @@ RUN npm install
 # Gera o build da aplicação
 RUN npm run build
 
-
 FROM nginx
 
-COPY --from=build /app/dist/frontend /usr/share/nginx/html
+RUN rm -rf /usr/share/nginx/html/*
+
+COPY nginx-custom.conf /etc/nginx/nginx-custom.conf
+
+COPY --from=build /app/dist/frontend /usr/share/nginx/html/
 
 EXPOSE 80

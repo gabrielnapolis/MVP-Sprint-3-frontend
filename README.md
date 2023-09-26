@@ -32,14 +32,19 @@ O intuito desse sistema foi realizar um cadastro de treinadores Pokemon, onde é
 
 Após isso, o treinador pode adicionar e remover pokemons de sua pokédex.
 
-Na página onde são listados todos os Pokemons, foi usado o seguinte endpoint:
+Na página onde são listados todos os Pokemons, foi usado os seguintes endpoints:
 
-https://pokeapi.co/api/v2/pokemon/?limit=30
+Endpoint onde é possível consultar uma determinada quantidade de pokemons, informando a quantidade no parâmetro "limit"
+    
+    Exemplo: https://pokeapi.co/api/v2/pokemon/?limit=100
 
+Com essa chamada, é relizada a listagem inicial, mostrando todos os pokemons disponível para o treinador adicionar a sua pokédex.
 
+Após a chamada de todos, é possível realizar uma chamada indivídual, passando o código do pokemon
 
+    Exemplo: https://pokeapi.co/api/v2/pokemon/1
 
-
+Com essa chamada, é realizada a consulta de informações dos pokemons, como peso, altura, habilidades, e imagens.
 
 
 

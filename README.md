@@ -37,16 +37,17 @@ Na página onde são listados todos os Pokemons, foi usado os seguintes endpoint
 Endpoint onde é possível consultar uma determinada quantidade de pokemons, informando a quantidade no parâmetro "limit"
     
     Exemplo: https://pokeapi.co/api/v2/pokemon/?limit=100
-<img src="src\assets\img\portfolio.png">
 
 Com essa chamada, é relizada a listagem inicial, mostrando todos os pokemons disponível para o treinador adicionar a sua pokédex.
+<img src="src\assets\img\portfolio.png">
+
 
 Após a chamada de todos, é possível realizar uma chamada indivídual, passando o código do pokemon
 
     Exemplo: https://pokeapi.co/api/v2/pokemon/1
 
-Com essa chamada, é realizada a consulta de informações dos pokemons, como peso, altura, habilidades, e imagens.
-
+Com essa chamada, é realizada a consulta de informações dos pokemons, como: tipos, peso, altura, habilidades, e imagens.
+<img src="src\assets\img\portfolio2.png">
 
 
 ## Execução via Docker

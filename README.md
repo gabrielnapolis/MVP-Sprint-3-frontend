@@ -37,6 +37,7 @@ Na página onde são listados todos os Pokemons, foi usado os seguintes endpoint
 Endpoint onde é possível consultar uma determinada quantidade de pokemons, informando a quantidade no parâmetro "limit"
     
     Exemplo: https://pokeapi.co/api/v2/pokemon/?limit=100
+<img src="src\assets\img\porfolio.png">
 
 Com essa chamada, é relizada a listagem inicial, mostrando todos os pokemons disponível para o treinador adicionar a sua pokédex.
 

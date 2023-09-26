@@ -1,6 +1,7 @@
 .header {
     display: flex;
-    align-items: center;
+    
+    flex-direction: row !important;
 }
 
 .header a {
@@ -35,7 +36,8 @@
     top: -50px;
 }
 
-.logout {
+.div-icons {
     display: flex !important;
-    justify-content: end !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
 }

@@ -17,7 +17,7 @@ export class LoginComponent {
   login(): void{ 
     this.personService.login(this.email, this.senha).subscribe((data)=>{
       localStorage.setItem('data', JSON.stringify(data))
-      console.log(data)
+      console.log(this.email, this.senha)
       this.router.navigate(["/"]);
     },
     error => {

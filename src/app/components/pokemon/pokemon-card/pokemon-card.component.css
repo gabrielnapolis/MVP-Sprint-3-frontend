@@ -26,13 +26,19 @@
     color: #919191;
 }
 
-button{
+.class-button{
     background-color: #ffde00 !important;
 }
 
 .info-icon{
-    display: flex;
-    justify-content: end;
+    display: flex !important;
+    justify-content: end !important;
     color:#30a7d7;
+    border: none;
 }
 
+.div-button {
+    justify-content: end;
+    display: flex;
+    flex-direction: row;
+}

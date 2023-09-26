@@ -1,5 +1,5 @@
 import { Component, Input } from "@angular/core";
-import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import { MatDialog, MatDialogModule } from "@angular/material/dialog";
 import { PokemonDetailComponent } from "../pokemon-detail/pokemon-detail.component";
 import { PokemonDTO } from "../pokemonDTO.model";
 import { PokemonDTOService } from "../pokemon-dto.service";
@@ -20,10 +20,13 @@ export class PokemonCardComponent {
 
   pokemonDTO: PokemonDTO = {
     code: null,
-    fk_pessoa: null
-  }
-  
-  constructor(public dialog: MatDialog, private pokemonService: PokemonDTOService) {}
+    fk_pessoa: null,
+  };
+
+  constructor(
+    public dialog: MatDialog,
+    private pokemonService: PokemonDTOService
+  ) {}
 
   catchImage() {
     const numberFormat = this.leadingZero(this.numberUrl);
@@ -32,7 +35,6 @@ export class PokemonCardComponent {
 
     return `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${numberFormat}.png`;
   }
-
 
   leadingZero(str: string | number, size = 3): string {
     let s = String(str);
@@ -44,22 +46,28 @@ export class PokemonCardComponent {
   }
 
   openDialog(pokemonNumber: any) {
-    const dialogRef = this.dialog.open(PokemonDetailComponent, {data:pokemonNumber});
+    const dialogRef = this.dialog.open(PokemonDetailComponent, {
+      data: pokemonNumber,
+    });
   }
 
-  addPokemon(): void{
-    this.pokemonDTO.code = this.numberUrl
-    this.pokemonDTO.fk_pessoa = 1
+  addPokemon(): void {
+    const token = localStorage.getItem("data");
+    if (token) {
+      const user = JSON.parse(token);
 
-    console.log(this.pokemonDTO)
+      this.pokemonDTO.code = this.numberUrl;
+      this.pokemonDTO.fk_pessoa = user.id;
 
-    this.pokemonService.create(this.pokemonDTO).subscribe(() => {
-      this.pokemonService.showMessage("Pokemon Adicionado")
-    },
-    error => {
-        console.log(error)
-        this.pokemonService.showMessage(`${error.error.mesage}`)
+      this.pokemonService.create(this.pokemonDTO).subscribe(
+        () => {
+          this.pokemonService.showMessage("Pokemon Adicionado");
+        },
+        (error) => {
+          console.log(error);
+          this.pokemonService.showMessage(`${error.error.mesage}`);
+        }
+      );
     }
-    );
   }
 }

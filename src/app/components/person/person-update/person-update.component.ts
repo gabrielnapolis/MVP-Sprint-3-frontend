@@ -30,11 +30,11 @@ export class PersonUpdateComponent implements OnInit{
   updatePerson(): void {
     this.personService.update(this.person).subscribe(()=>{
       this.personService.showMessage("Usuário atualizado com sucesso!");
-      this.router.navigate(["/person"])
+      this.router.navigate(["/"])
     })
   }
 
   cancel(): void {
-    this.router.navigate(["/person"])
+    this.router.navigate(["/"])
   }
 }

@@ -46,7 +46,7 @@ Após a chamada de todos, é possível realizar uma chamada indivídual, passand
 
     Exemplo: https://pokeapi.co/api/v2/pokemon/1
 
-Com essa chamada, é realizada a consulta de informações dos pokemons, como: tipos, peso, altura, habilidades, e imagens.
+Com essa chamada, é realizada a consulta de informações dos pokemons, como: tipos, fraquezas, peso, altura, habilidades, e imagens.
 
 <img src="src\assets\img\portfolio2.png">
 

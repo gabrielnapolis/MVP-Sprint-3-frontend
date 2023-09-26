@@ -7,15 +7,18 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./home.component.css"],
 })
 export class HomeComponent implements OnInit {
-  token: any;
 
   constructor(private router: Router) {}
   
   ngOnInit(): void {
-    this.token = localStorage.getItem("token");
-
-    if (!this.token) {
-      this.router.navigateByUrl("/login");
+    const data = localStorage.getItem('data')
+    
+    if (data) {
+      const token = JSON.parse(data)
+      console.log(token.data)
+      if(!token.data){
+        this.router.navigateByUrl("/login");
+      }
     }
   }
 }

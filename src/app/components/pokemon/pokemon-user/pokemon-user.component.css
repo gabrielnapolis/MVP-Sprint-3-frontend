@@ -45,3 +45,9 @@ button{
     color:#30a7d7;
 }
 
+.delete-icon{
+    display: flex;
+    justify-content: end;
+    color:#ff0000;
+}
+

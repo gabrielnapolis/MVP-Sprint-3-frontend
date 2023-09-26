@@ -34,3 +34,8 @@
     transition: 0.2s linear;
     top: -50px;
 }
+
+.logout {
+    display: flex !important;
+    justify-content: end !important;
+}

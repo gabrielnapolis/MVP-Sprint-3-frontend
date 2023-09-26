@@ -2,7 +2,7 @@ export interface Person {
     id?: number
     nome: string
     email: string
-    senha: number | null
+    senha: string
     idade: number | null
 }
 

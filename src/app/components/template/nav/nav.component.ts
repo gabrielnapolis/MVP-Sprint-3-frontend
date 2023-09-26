@@ -1,23 +1,23 @@
-import { Component } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-nav',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.css']
+  selector: "app-nav",
+  templateUrl: "./nav.component.html",
+  styleUrls: ["./nav.component.css"],
 })
-export class NavComponent {
+export class NavComponent implements OnInit{
   create: any;
+  id: any;
 
-  constructor ( private router: Router) {
-    this.router.events.subscribe((event: any) => {
-      if (event instanceof NavigationEnd) {
-        if (event.url === '/person/create') {
-          this.create= true;
-        } else {
-          this.create= false;
-        }
-      }
-    });
+  constructor() {}
+
+  ngOnInit(): void {
+    const token = localStorage.getItem('data')
+
+    if(token){
+    
+    const user = JSON.parse(token)
+    this.id = user.id
+    }
   }
 }

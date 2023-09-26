@@ -14,7 +14,7 @@ export class PersonCreateComponent {
   person: Person = {
     nome: '',
     email: '',
-    senha: null,
+    senha: '',
     idade: null,
   }
 
@@ -23,11 +23,15 @@ export class PersonCreateComponent {
   createPerson(): void {
     this.personService.create(this.person).subscribe(() => {
       this.personService.showMessage("Usuário criado!")
-      this.router.navigate(["/person"])
-    });
+      this.router.navigate(["/login"])
+    },
+    error => {
+      this.personService.showMessage(error.error.mesage);
+    }
+    );
   }
 
   cancel(): void {
-    this.router.navigate(["/person"])
+    this.router.navigate(["/login"])
   }
 }

@@ -15,9 +15,15 @@ export class LoginComponent {
 
 
   login(): void{ 
-    this.personService.login(this.email, this.senha).subscribe((token)=>{
-      localStorage.setItem('token', token)
-    })
+    this.personService.login(this.email, this.senha).subscribe((data)=>{
+      localStorage.setItem('data', JSON.stringify(data))
+      console.log(data)
+      this.router.navigate(["/"]);
+    },
+    error => {
+      this.personService.showMessage("Usuário não cadastrado");
+    }
+    )
   }
 
   goToRegister(){

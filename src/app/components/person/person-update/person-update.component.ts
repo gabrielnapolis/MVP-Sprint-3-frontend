@@ -14,7 +14,7 @@ export class PersonUpdateComponent implements OnInit{
   person: Person = {
     nome: '',
     email: '',
-    senha: null,
+    senha: '',
     idade: null,
   }
 
@@ -24,7 +24,6 @@ export class PersonUpdateComponent implements OnInit{
     const id = this.route.snapshot.paramMap.get("id")!;
     this.personService.readById(id).subscribe((person) => {
       this.person = person;
-      console.log(this.person)
     });
   }
 

@@ -9,6 +9,7 @@ import { Observable } from "rxjs";
 })
 export class PersonService {
   baseUrl = "http://127.0.0.1:5000/pessoa";
+  baseUrlLogin = "http://127.0.0.1:5000/login";
   baseUrl2 = "http://127.0.0.1:5000/pessoas";
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
@@ -27,7 +28,7 @@ export class PersonService {
   }
 
   read(): Observable<PersonsDto>{
-    const token = localStorage.getItem('token')
+    const token = localStorage.getItem('data')
     if(!token){
       const error: any = new Error('')
       error.timestamp = Date.now();
@@ -53,6 +54,6 @@ export class PersonService {
   }
 
   login(email: string, senha: string): Observable<string> {
-    return this.http.post<string>(this.baseUrl, {email, senha})
+    return this.http.post<string>(this.baseUrlLogin, {email, senha})
   }
 }

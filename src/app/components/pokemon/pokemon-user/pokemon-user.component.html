@@ -7,6 +7,9 @@
       <img [src]="catchImage(pokemon.id)" /><br />
       <p class="number">N° {{ leadingZero(pokemon.id)}}</p>
       <p class="name">{{ pokemon.name }}</p>
+      <a class="material-icons delete-icon" (click)="ConfirmDelete(id)">
+        delete
+      </a>
     </div>
   </div>
 </div>

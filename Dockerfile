@@ -6,7 +6,7 @@ RUN mkdir /app
 # Define diretório de trabalho dentro do container
 WORKDIR /app
 
-# copy the package.json to install dependencies
+# Copia os arquivos package.json para instalar as dependências
 COPY package.json package-lock.json ./
 
 # Instala dependencias utilizando o gerenciador de pacotes do NodeJs

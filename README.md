@@ -43,11 +43,11 @@ Com essa chamada, é relizada a listagem inicial, mostrando todos os pokemons di
 <img src="src\assets\img\portfolio.png">
 
 
-Após a chamada de todos, é possível realizar uma chamada indivídual, passando o código do pokemon
+Após a chamada de todos, é possível realizar uma chamada indivídual, clicando no ícone de informações.
 
     Exemplo: https://pokeapi.co/api/v2/pokemon/1
 
-Com essa chamada, é realizada a consulta de informações dos pokemons, como: tipos, fraquezas, peso, altura, habilidades, e imagens.
+Com essa chamada, passando o código do pokemon, é realizada a consulta de informações como: tipos, fraquezas, peso, altura, habilidades, e imagens.
 
 <img src="src\assets\img\portfolio2.png">
 

@@ -51,8 +51,17 @@ Com essa chamada, é realizada a consulta de informações dos pokemons, como: t
 <img src="src\assets\img\portfolio2.png">
 
 
-## Execução via Docker Compose
+## Execução via Docker
 
-docker compose up --build -d
+1° - Criar imagem Docker:
+
+    No diretório raiz do projeto, execute o seguinte comando:
+    
+        docker build -t frontend .
+
+2° - Executar container
+
+        docker run -p 80:80 frontend
+
 
 

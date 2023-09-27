@@ -20,12 +20,13 @@ FROM nginx:alpine
 
 COPY ./nginx.conf /etc/nginx/nginx.conf
 
-## Remove default nginx index page
+## Remove página index padrão do nginx
 RUN rm -rf /var/www/frontend/*
 
-# Copy from the stage 1
+# Copia o build para o diretório do Nginx
 COPY --from=build /app/dist/frontend /var/www/frontend
 
+# Expõe a aplicação na porta 80
 EXPOSE 80
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]

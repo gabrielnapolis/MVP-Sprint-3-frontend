@@ -31,6 +31,8 @@ Esse repositório é referente ao Componente A, o frontend da aplicação, desen
 
 O intuito desse sistema foi realizar um cadastro de treinadores Pokemon, onde é possível realizar seu cadastro e adicionar pokemons a sua pokédex.
 
+<img src="src\assets\img\portfolio-login.png">
+
 Após isso, o treinador pode adicionar e remover pokemons de sua pokédex.
 
 Na página onde são listados todos os Pokemons, foi usado os seguintes endpoints:

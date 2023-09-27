@@ -22,7 +22,7 @@ Nesse contexto foi utilizado todo o conteúdo apresentado ao longo das matérias
 
 **Componente B:** PokeApi, API pública onde é possível consultar todos os pokemons, juntamente com seus atributos como: imagens, habilitades, tipos, altura, peso, fraquezas. Documentação: https://pokeapi.co/
 
-**Componente C:** API REST desenvolvida com Python e Flask.
+**Componente C:** API REST desenvolvida com Python e Flask. Repositório: https://github.com/gabrielnapolis/MVP-Sprint-3-backend
 
 ## Sobre este repositório
 

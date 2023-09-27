@@ -20,7 +20,7 @@ Nesse contexto foi utilizado todo o conteúdo apresentado ao longo das matérias
 
 * **Componente A:** Frontend em Angular.
 
-* **Componente B:** PokeApi, API pública onde é possível consultar todos os pokemons, juntamente com seus atributos como: imagens, habilitades, tipos, altura, peso, fraquezas. Documentação: https://pokeapi.co/
+* **Componente B:** PokeApi, API pública onde é possível consultar todos os pokemons, juntamente com seus atributos como: imagens, habilidades, tipos, altura, peso, fraquezas. Documentação: https://pokeapi.co/
 
 * **Componente C:** API REST desenvolvida com Python e Flask. 
 Repositório: https://github.com/gabrielnapolis/MVP-Sprint-3-backend
@@ -39,7 +39,7 @@ Endpoint onde é possível consultar uma determinada quantidade de pokemons, inf
     
     Exemplo: https://pokeapi.co/api/v2/pokemon/?limit=100
 
-Com essa chamada, é relizada a listagem inicial, mostrando todos os pokemons disponível para o treinador adicionar a sua pokédex.
+Com essa chamada, é relizada a listagem inicial, mostrando todos os pokemons disponíveis para o treinador adicionar a sua pokédex.
 <img src="src\assets\img\portfolio.png">
 
 

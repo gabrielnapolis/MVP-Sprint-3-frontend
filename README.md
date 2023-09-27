@@ -49,6 +49,8 @@ Após a chamada de todos, é possível realizar uma chamada indivídual, clicand
 
 Com essa chamada, passando o código do pokemon, é realizada a consulta de informações como: tipos, fraquezas, peso, altura, habilidades, e imagens.
 
+Dessa forma, é exibido o seguinte modal na tela:
+
 <img src="src\assets\img\portfolio2.png">
 
 

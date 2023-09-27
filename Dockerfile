@@ -1,6 +1,8 @@
 FROM node:18.12.1 AS build
 
+# Cria diretório
 RUN mkdir /app
+
 # Define diretório de trabalho dentro do container
 WORKDIR /app
 
@@ -18,6 +20,7 @@ RUN npm run build
 
 FROM nginx:alpine
 
+# Copia arquivo de parametrização do Nginx para o diretório necessário
 COPY ./nginx.conf /etc/nginx/nginx.conf
 
 ## Remove página index padrão do nginx

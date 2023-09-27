@@ -39,7 +39,7 @@ Endpoint onde é possível consultar uma determinada quantidade de pokemons, inf
     
     Exemplo: https://pokeapi.co/api/v2/pokemon/?limit=100
 
-Com essa chamada, é relizada a listagem inicial, mostrando todos os pokemons disponíveis para o treinador adicionar a sua pokédex.
+Com essa chamada, é realizada a listagem inicial, mostrando todos os pokemons disponíveis para o treinador adicionar a sua pokédex.
 
 <img src="src\assets\img\portfolio.png">
 
